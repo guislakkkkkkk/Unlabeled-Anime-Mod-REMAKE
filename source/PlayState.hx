@@ -314,13 +314,6 @@ class PlayState extends MusicBeatState
 	private var controlArray:Array<String>;
 
 	var precacheList:Map<String, String> = new Map<String, String>();
-	
-	// stores the last judgement object
-	public static var lastRating:FlxSprite;
-	// stores the last combo sprite object
-	public static var lastCombo:FlxSprite;
-	// stores the last combo score objects in an array
-	public static var lastScore:Array<FlxSprite> = [];
 
 	override public function create()
 	{
@@ -898,6 +891,366 @@ class PlayState extends MusicBeatState
 			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script1")));
 		#end //thx random
 
+		#if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script1.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script1");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script1"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script1")));
+		#end //thx random
+
+		#if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script2.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script2");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script2"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script2")));
+		#end //thx random
+
+		#if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script3.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script3");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script3"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script3")));
+		#end //thx random
+
+		#if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script4.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script4");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script4"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script4")));
+		#end //thx random
+
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script5.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script5");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script5"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script5")));
+		#end //thx random
+
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script6.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script6");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script6"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script6")));
+		#end //thx random
+
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script7.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script7");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script7"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script7")));
+		#end //thx random
+
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script8.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script8");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script8"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script8")));
+		#end //thx random
+
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script9.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script9");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script9"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script9")));
+		#end //thx random
+		
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script10.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script10");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script10"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script10")));
+		#end //thx random
+		
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script11.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script11");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script11"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script11")));
+		#end //thx random
+		
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script12.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script12");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script12"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script12")));
+		#end //thx random
+		
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script13.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script13");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script13"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script13")));
+		#end //thx random
+		
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script14.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script14");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script14"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script14")));
+		#end //thx random
+		
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script15.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script15");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script15"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script15")));
+		#end //thx random
+		
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script16.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script16");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script16"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script16")));
+		#end //thx random
+		
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script17.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script17");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script17"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script17")));
+		#end //thx random
+		
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script18.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script18");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script18"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script18")));
+		#end //thx random
+		
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script19.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script19");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script19"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script19")));
+		#end //thx random
+		
+        #if LUA_ALLOWED
+		var doPush:Bool = false;
+
+		if(openfl.utils.Assets.exists("assets/scripts/" + "script20.lua"))
+		{
+			var path = Paths.luaAsset("scripts/" + "script20");
+			var luaFile = openfl.Assets.getBytes(path);
+
+			FileSystem.createDirectory(Main.path + "assets/scripts");
+			FileSystem.createDirectory(Main.path + "assets/scripts/");
+			
+			File.saveBytes(Paths.lua("scripts/" + "script20"), luaFile);
+			doPush = true;
+		}
+		if(doPush)
+			luaArray.push(new FunkinLua(Paths.lua("scripts/" + "script20")));
+		#end //thx random
+		
 		// STAGE SCRIPTS
 		var doPush:Bool = false;
 		var luaFile:String = 'stages/' + curStage + '.lua';
@@ -1226,6 +1579,114 @@ class PlayState extends MusicBeatState
 			if(OpenFlAssets.exists(luaFile)) {
 				doPush = true;
 			}
+		
+		if(doPush) 
+			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile)));
+		#end
+
+    #if (LUA_ALLOWED)
+		var doPush:Bool = false;
+		var luaFile:String = 'data/' + Paths.formatToSongPath(SONG.song) + '/script2.lua';
+			luaFile = Paths.getPreloadPath(luaFile);
+			if(OpenFlAssets.exists(luaFile)) {
+				doPush = true;
+			}
+		
+		if(doPush) 
+			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile)));
+		#end
+
+    #if (LUA_ALLOWED)
+		var doPush:Bool = false;
+		var luaFile:String = 'data/' + Paths.formatToSongPath(SONG.song) + '/script3.lua';
+			luaFile = Paths.getPreloadPath(luaFile);
+			if(OpenFlAssets.exists(luaFile)) {
+				doPush = true;
+			}
+		
+		if(doPush) 
+			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile)));
+		#end
+
+    #if (LUA_ALLOWED)
+		var doPush:Bool = false;
+		var luaFile:String = 'data/' + Paths.formatToSongPath(SONG.song) + '/script4.lua';
+			luaFile = Paths.getPreloadPath(luaFile);
+			if(OpenFlAssets.exists(luaFile)) {
+				doPush = true;
+			}
+		
+		if(doPush) 
+			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile)));
+		#end
+
+    #if (LUA_ALLOWED)
+		var doPush:Bool = false;
+		var luaFile:String = 'data/' + Paths.formatToSongPath(SONG.song) + '/script5.lua';
+			luaFile = Paths.getPreloadPath(luaFile);
+			if(OpenFlAssets.exists(luaFile)) {
+				doPush = true;
+			}
+		
+		if(doPush) 
+			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile)));
+		#end
+		
+    #if (LUA_ALLOWED)
+		var doPush:Bool = false;
+		var luaFile:String = 'data/' + Paths.formatToSongPath(SONG.song) + '/script6.lua';
+			luaFile = Paths.getPreloadPath(luaFile);
+			if(OpenFlAssets.exists(luaFile)) {
+				doPush = true;
+			}
+		
+		if(doPush) 
+			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile)));
+		#end
+		
+    #if (LUA_ALLOWED)
+		var doPush:Bool = false;
+		var luaFile:String = 'data/' + Paths.formatToSongPath(SONG.song) + '/script7.lua';
+			luaFile = Paths.getPreloadPath(luaFile);
+			if(OpenFlAssets.exists(luaFile)) {
+				doPush = true;
+			}
+		
+		if(doPush) 
+			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile)));
+		#end
+		
+    #if (LUA_ALLOWED)
+		var doPush:Bool = false;
+		var luaFile:String = 'data/' + Paths.formatToSongPath(SONG.song) + '/script8.lua';
+			luaFile = Paths.getPreloadPath(luaFile);
+			if(OpenFlAssets.exists(luaFile)) {
+				doPush = true;
+			}
+		
+    #if (LUA_ALLOWED)
+		var doPush:Bool = false;
+		var luaFile:String = 'data/' + Paths.formatToSongPath(SONG.song) + '/script9.lua';
+			luaFile = Paths.getPreloadPath(luaFile);
+			if(OpenFlAssets.exists(luaFile)) {
+				doPush = true;
+			}
+			
+    #if (LUA_ALLOWED)
+		var doPush:Bool = false;
+		var luaFile:String = 'data/' + Paths.formatToSongPath(SONG.song) + '/script10.lua';
+			luaFile = Paths.getPreloadPath(luaFile);
+			if(OpenFlAssets.exists(luaFile)) {
+				doPush = true;
+			}
+		
+		if(doPush) 
+			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile)));
+		#end
+		
+		if(doPush) 
+			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile)));
+		#end
 		
 		if(doPush) 
 			luaArray.push(new FunkinLua(Asset2File.getPath(luaFile)));
@@ -2250,7 +2711,7 @@ class PlayState extends MusicBeatState
 	public function updateScore(miss:Bool = false)
 	{
 		scoreTxt.text = 'Score: ' + songScore
-		+ ' | Misses: ' + songMisses
+		+ ' | Ported by Guislakkkk | Misses: ' + songMisses
 		+ ' | Rating: ' + ratingName
 		+ (ratingName != '?' ? ' (${Highscore.floorDecimal(ratingPercent * 100, 2)}%) - $ratingFC' : '');
 
@@ -4113,12 +4574,6 @@ class PlayState extends MusicBeatState
 		comboSpr.velocity.x += FlxG.random.int(1, 10);
 
 		insert(members.indexOf(strumLineNotes), rating);
-		
-		if (!ClientPrefs.comboStacking)
-		{
-			if (lastRating != null) lastRating.kill();
-			lastRating = rating;
-		}
 
 		if (!PlayState.isPixelStage)
 		{
@@ -4151,19 +4606,6 @@ class PlayState extends MusicBeatState
 		{
 			insert(members.indexOf(strumLineNotes), comboSpr);
 		}
-		if (!ClientPrefs.comboStacking)
-		{
-			if (lastCombo != null) lastCombo.kill();
-			lastCombo = comboSpr;
-		}
-		if (lastScore != null)
-		{
-			while (lastScore.length > 0)
-			{
-				lastScore[0].kill();
-				lastScore.remove(lastScore[0]);
-			}
-		}
 		for (i in seperatedScore)
 		{
 			var numScore:FlxSprite = new FlxSprite().loadGraphic(Paths.image(pixelShitPart1 + 'num' + Std.int(i) + pixelShitPart2));
@@ -4174,9 +4616,6 @@ class PlayState extends MusicBeatState
 
 			numScore.x += ClientPrefs.comboOffset[2];
 			numScore.y -= ClientPrefs.comboOffset[3];
-			
-			if (!ClientPrefs.comboStacking)
-				lastScore.push(numScore);
 
 			if (!PlayState.isPixelStage)
 			{
